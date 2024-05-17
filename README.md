@@ -4,9 +4,8 @@ A simple project where we will create a websocket server and we can validate it 
 The service we will provide with Deno sends messages to all clients without including the same client who sent the message (a simple transmission).
 
 ## Serve it
-just run in terminal
-<code>
->> docker run -d --init -p <HOST_PORT>:<PORT> --mount type=bind,source=".\main.js",target=/app/main.js --name denosockerapp -e PORT=<PORT> denoland/deno deno run --allow-net --allow-env /app/main.js
-<code>
+Just run in terminal
+
+> docker run -d --init -p <HOST_PORT>:<PORT> --mount type=bind,source=".\main.js",target=/app/main.js --name denosockerapp -e PORT=<PORT> denoland/deno deno run --allow-net --allow-env /app/main.js
 
 ## Enjoy!!
