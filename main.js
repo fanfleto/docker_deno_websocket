@@ -31,7 +31,7 @@ Deno.serve({
         console.log(`RECEIVED: ${event.data}`);
 
         clients.filter(x => x !== socket).forEach(function (client) {
-          client.send(` < ${event.data}`);
+          client.send(`${event.data}`);
         });
       };
 
